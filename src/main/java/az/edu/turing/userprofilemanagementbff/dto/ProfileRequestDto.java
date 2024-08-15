@@ -1,6 +1,7 @@
 package az.edu.turing.userprofilemanagementbff.dto;
 
-import az.edu.turing.profileapp.model.enums.SocialMediaType;
+
+import az.edu.turing.userprofilemanagementbff.enums.SocialMediaType;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

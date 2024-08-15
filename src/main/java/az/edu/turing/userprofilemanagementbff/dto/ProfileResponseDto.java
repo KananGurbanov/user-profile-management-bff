@@ -1,7 +1,8 @@
 package az.edu.turing.userprofilemanagementbff.dto;
 
-import az.edu.turing.profileapp.model.enums.SocialMediaType;
-import az.edu.turing.profileapp.model.enums.Status;
+
+import az.edu.turing.userprofilemanagementbff.enums.SocialMediaType;
+import az.edu.turing.userprofilemanagementbff.enums.Status;
 
 public record ProfileResponseDto(
         String mailAddress,

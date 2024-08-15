@@ -1,5 +1,6 @@
 package az.edu.turing.userprofilemanagementbff.client;
 
+import az.edu.turing.userprofilemanagementbff.config.FeignConfig;
 import az.edu.turing.userprofilemanagementbff.dto.*;
 import jakarta.validation.Valid;
 import org.antlr.v4.runtime.misc.NotNull;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 
-@FeignClient(name = "user-profile", url = "${feign.client.config.user-profile.url")
+@FeignClient(name = "user-profile", url = "${feign.client.config.user-profile.url",configuration = FeignConfig.class)
 public interface UserProfileClient {
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     ResponseEntity<RestResponse<Long>> createUser(@RequestBody @Valid UserRequestDto userCreateRequestDto);
