@@ -46,6 +46,10 @@ dependencyManagement {
 	}
 }
 
+jar {
+	archiveFileName = 'user-profile-management-bff-0.0.1-SNAPSHOT.jar'
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
